@@ -1,8 +1,10 @@
 import { useState } from "react";
+import AnimalSoundGame from "./components/AnimalSoundGame";
 import AnimalsGame from "./components/AnimalsGame";
 import BalloonGame from "./components/BalloonGame";
 import BirdsGame from "./components/BirdsGame";
 import BodyPartsGame from "./components/BodyPartsGame";
+import CatchFruitGame from "./components/CatchFruitGame";
 import CitiesGame from "./components/CitiesGame";
 import ColorMixGame from "./components/ColorMixGame";
 import ColorsGame from "./components/ColorsGame";
@@ -15,6 +17,8 @@ import HomeScreen from "./components/HomeScreen";
 import LettersGame from "./components/LettersGame";
 import MatchingGame from "./components/MatchingGame";
 import MatraGame from "./components/MatraGame";
+import MemoryCardGame from "./components/MemoryCardGame";
+import NumberMatchGame from "./components/NumberMatchGame";
 import NumbersGame from "./components/NumbersGame";
 import ParentDashboard from "./components/ParentDashboard";
 import PuzzleGame from "./components/PuzzleGame";
@@ -27,6 +31,7 @@ import TablesGame from "./components/TablesGame";
 import VegetablesGame from "./components/VegetablesGame";
 import VehiclesGame from "./components/VehiclesGame";
 import VideoGame from "./components/VideoGame";
+import WordBuilderGame from "./components/WordBuilderGame";
 
 export type GameScreen =
   | "home"
@@ -56,7 +61,12 @@ export type GameScreen =
   | "videos"
   | "balloon"
   | "colormix"
-  | "dashboard";
+  | "dashboard"
+  | "numbermatch"
+  | "animalsound"
+  | "wordbuilder"
+  | "memorycards"
+  | "catchfruit";
 
 export default function App() {
   const [screen, setScreen] = useState<GameScreen>("home");
@@ -97,6 +107,11 @@ export default function App() {
       {screen === "videos" && <VideoGame onBack={goHome} />}
       {screen === "balloon" && <BalloonGame onBack={goHome} />}
       {screen === "colormix" && <ColorMixGame onBack={goHome} />}
+      {screen === "numbermatch" && <NumberMatchGame onBack={goHome} />}
+      {screen === "animalsound" && <AnimalSoundGame onBack={goHome} />}
+      {screen === "wordbuilder" && <WordBuilderGame onBack={goHome} />}
+      {screen === "memorycards" && <MemoryCardGame onBack={goHome} />}
+      {screen === "catchfruit" && <CatchFruitGame onBack={goHome} />}
     </div>
   );
 }

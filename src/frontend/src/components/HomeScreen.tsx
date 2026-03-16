@@ -227,7 +227,7 @@ const games = [
     id: "counting" as GameScreen,
     emoji: "🔢",
     title: "Counting",
-    subtitle: "Gino / गिनो",
+    subtitle: "Gino 1-100 / गिनो",
     bg: "bg-[oklch(95%_0.12_300)]",
     border: "border-[oklch(60%_0.22_300)]",
     shadow: "shadow-[0_6px_0_0_oklch(50%_0.22_300)]",
@@ -269,7 +269,7 @@ const games = [
   },
   {
     id: "videos" as GameScreen,
-    emoji: "🎬",
+    emoji: "🎞️",
     title: "Videos",
     subtitle: "Video / वीडियो",
     bg: "bg-[oklch(95%_0.12_250)]",
@@ -299,6 +299,61 @@ const games = [
     shadow: "shadow-[0_6px_0_0_oklch(50%_0.22_145)]",
     text: "text-[oklch(30%_0.22_145)]",
     ocid: "home.colormix.button",
+  },
+  {
+    id: "numbermatch" as GameScreen,
+    emoji: "🔢",
+    title: "Number Match",
+    subtitle: "Sankhya Milao / संख्या मिलाओ",
+    bg: "bg-[oklch(95%_0.12_145)]",
+    border: "border-[oklch(60%_0.22_145)]",
+    shadow: "shadow-[0_6px_0_0_oklch(50%_0.22_145)]",
+    text: "text-[oklch(30%_0.22_145)]",
+    ocid: "home.numbermatch.button",
+  },
+  {
+    id: "animalsound" as GameScreen,
+    emoji: "🔊",
+    title: "Animal Sound",
+    subtitle: "Aawaz / आवाज़",
+    bg: "bg-[oklch(95%_0.12_50)]",
+    border: "border-[oklch(68%_0.22_50)]",
+    shadow: "shadow-[0_6px_0_0_oklch(58%_0.22_50)]",
+    text: "text-[oklch(32%_0.22_50)]",
+    ocid: "home.animalsound.button",
+  },
+  {
+    id: "wordbuilder" as GameScreen,
+    emoji: "🔤",
+    title: "Word Builder",
+    subtitle: "Shabd Banao / शब्द बनाओ",
+    bg: "bg-[oklch(95%_0.12_300)]",
+    border: "border-[oklch(60%_0.22_300)]",
+    shadow: "shadow-[0_6px_0_0_oklch(50%_0.22_300)]",
+    text: "text-[oklch(28%_0.22_300)]",
+    ocid: "home.wordbuilder.button",
+  },
+  {
+    id: "memorycards" as GameScreen,
+    emoji: "🃏",
+    title: "Memory Cards",
+    subtitle: "Yaaddasht / याददाश्त",
+    bg: "bg-[oklch(95%_0.12_250)]",
+    border: "border-[oklch(60%_0.2_250)]",
+    shadow: "shadow-[0_6px_0_0_oklch(50%_0.2_250)]",
+    text: "text-[oklch(30%_0.2_250)]",
+    ocid: "home.memorycards.button",
+  },
+  {
+    id: "catchfruit" as GameScreen,
+    emoji: "🍎",
+    title: "Catch Fruit",
+    subtitle: "Phal Pakdo / फल पकड़ो",
+    bg: "bg-[oklch(96%_0.12_27)]",
+    border: "border-[oklch(65%_0.22_27)]",
+    shadow: "shadow-[0_6px_0_0_oklch(55%_0.22_27)]",
+    text: "text-[oklch(35%_0.22_27)]",
+    ocid: "home.catchfruit.button",
   },
 ];
 
@@ -333,7 +388,6 @@ export default function HomeScreen({
           <div className="flex items-center gap-2">
             <span className="text-3xl">{avatar}</span>
           </div>
-
           <div className="flex flex-col items-end gap-1">
             <div
               data-ocid="home.stars.panel"
@@ -352,7 +406,6 @@ export default function HomeScreen({
             )}
           </div>
         </div>
-
         <div className="flex items-center gap-2 self-end mb-2">
           <motion.button
             data-ocid="home.dashboard.button"
@@ -364,7 +417,6 @@ export default function HomeScreen({
             📊 Dashboard
           </motion.button>
         </div>
-
         <h1 className="font-display text-5xl sm:text-6xl font-extrabold text-center leading-tight">
           <span className="text-[oklch(60%_0.22_27)]">Baby </span>
           <span className="text-[oklch(55%_0.22_250)]">Learning</span>
