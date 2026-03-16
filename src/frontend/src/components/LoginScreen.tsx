@@ -57,18 +57,6 @@ export default function LoginScreen() {
         transition={{ duration: 0.7, ease: [0.34, 1.56, 0.64, 1] }}
         className="relative z-10 flex flex-col items-center gap-6 bg-white rounded-[2.5rem] border-4 border-[oklch(85%_0.12_50)] shadow-[0_12px_0_0_oklch(70%_0.18_50)] p-10 max-w-sm w-full"
       >
-        <motion.img
-          src="/assets/generated/baby-learning-logo-transparent.dim_200x200.png"
-          alt="Baby Learning Logo"
-          className="w-28 h-28"
-          animate={{ rotate: [0, -5, 5, 0] }}
-          transition={{
-            duration: 4,
-            repeat: Number.POSITIVE_INFINITY,
-            ease: "easeInOut",
-          }}
-        />
-
         <div className="text-center">
           <h1 className="font-display text-4xl font-extrabold leading-tight">
             <span className="text-[oklch(60%_0.22_27)]">Baby </span>
@@ -122,15 +110,10 @@ export default function LoginScreen() {
 
       {/* Footer */}
       <p className="relative z-10 mt-8 text-xs text-muted-foreground text-center">
-        © {new Date().getFullYear()}. Built with ❤️ using{" "}
-        <a
-          href={`https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(window.location.hostname)}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline"
-        >
-          caffeine.ai
-        </a>
+        Created by{" "}
+        <span className="font-bold text-[oklch(45%_0.2_250)]">
+          Satyam Kumar
+        </span>
       </p>
     </div>
   );

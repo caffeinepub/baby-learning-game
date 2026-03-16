@@ -334,12 +334,6 @@ export default function HomeScreen({
             <span className="text-3xl">{avatar}</span>
           </div>
 
-          <img
-            src="/assets/generated/baby-learning-logo-transparent.dim_200x200.png"
-            alt="Baby Learning Logo"
-            className="w-14 h-14"
-          />
-
           <div className="flex flex-col items-end gap-1">
             <div
               data-ocid="home.stars.panel"
@@ -413,15 +407,10 @@ export default function HomeScreen({
       </div>
 
       <footer className="mt-auto pt-12 text-center text-sm text-muted-foreground">
-        © {new Date().getFullYear()}. Built with ❤️ using{" "}
-        <a
-          href={`https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(window.location.hostname)}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline hover:text-foreground transition-colors"
-        >
-          caffeine.ai
-        </a>
+        Created by{" "}
+        <span className="font-bold text-[oklch(45%_0.2_250)]">
+          Satyam Kumar
+        </span>
       </footer>
     </div>
   );
