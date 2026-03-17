@@ -11,6 +11,7 @@ import ColorsGame from "./components/ColorsGame";
 import CountingGame from "./components/CountingGame";
 import CountriesGame from "./components/CountriesGame";
 import DrawingGame from "./components/DrawingGame";
+import FamilyGame from "./components/FamilyGame";
 import FlowersGame from "./components/FlowersGame";
 import FruitsGame from "./components/FruitsGame";
 import HomeScreen from "./components/HomeScreen";
@@ -66,7 +67,8 @@ export type GameScreen =
   | "animalsound"
   | "wordbuilder"
   | "memorycards"
-  | "catchfruit";
+  | "catchfruit"
+  | "family";
 
 export default function App() {
   const [screen, setScreen] = useState<GameScreen>("home");
@@ -112,6 +114,7 @@ export default function App() {
       {screen === "wordbuilder" && <WordBuilderGame onBack={goHome} />}
       {screen === "memorycards" && <MemoryCardGame onBack={goHome} />}
       {screen === "catchfruit" && <CatchFruitGame onBack={goHome} />}
+      {screen === "family" && <FamilyGame onBack={goHome} />}
     </div>
   );
 }

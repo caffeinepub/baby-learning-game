@@ -169,6 +169,17 @@ const games = [
     ocid: "home.bodyparts.button",
   },
   {
+    id: "family" as GameScreen,
+    emoji: "👨‍👩‍👧‍👦",
+    title: "Family",
+    subtitle: "Parivaar / परिवार",
+    bg: "bg-[oklch(95%_0.12_300)]",
+    border: "border-[oklch(60%_0.22_300)]",
+    shadow: "shadow-[0_6px_0_0_oklch(50%_0.22_300)]",
+    text: "text-[oklch(28%_0.22_300)]",
+    ocid: "home.family.button",
+  },
+  {
     id: "drawing" as GameScreen,
     emoji: "🖍️",
     title: "Drawing",
